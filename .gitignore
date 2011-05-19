@@ -1,0 +1,10 @@
+
+*.aux
+*.bbl
+*.dvi
+*.fdb_latexmk
+*.log
+*.toc
+*.url
+*.swp
+*.blg

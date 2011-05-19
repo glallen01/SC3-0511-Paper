@@ -1,0 +1,58 @@
+\documentclass[letterpaper,12pt,smallheadings]{scrartcl}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{graphicx}
+\usepackage{jurabib}
+
+% For Times (Nimbus Roman) Font:
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\jurabibsetup{
+	titleformat=colonsep,
+	endnote
+	}
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		BATTLE ANALYSIS\\
+		\vspace{3em}
+		THE BATTLE OF COWPENS\\
+		\vspace{3em}
+		SCCC CLASS \#05-11, GROUP \#1\\
+		\vspace{3em}
+		Alvarado\\
+		\vspace{1em}
+		Allen\\
+		Bieber\\
+		C.\\
+		Flores\\
+		Futch\\
+		Hudak\\
+		Kalmus\\
+		Nagle\\
+		Nicholson\\
+	\end{center}
+\end{titlepage}
+
+\tableofcontents
+%\newpage
+
+\include{10-subject}
+
+\subsection{Annotated Bibliography}
+
+\nocite{*}
+\bibliographystyle{jurabib}
+%\bibliographystyle{annotate}
+\bibliography{99-references}
+
+\include{20-strategic_setting}
+\include{30-operational_situation}
+\include{40-tactical_situation}
+\include{50-action}
+\include{60-significance}
+
+\end{document}

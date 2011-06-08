@@ -1,11 +1,13 @@
-\documentclass[letterpaper,12pt,smallheadings,pdftex]{scrartcl}
 
 
 \include{01-preamble}
 
 \begin{document}
+
 \pagenumbering{roman}
+
 \singlespace
+
 \thispagestyle{empty}
 \begin{titlepage}
 	\begin{center}
@@ -29,21 +31,35 @@
 	\end{center}
 \end{titlepage}
 
+%%   if using scrpage2    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{scrheadings}
+%\ohead{\pagemark}
+\ihead{SCCC 05-11A1}%
+\cfoot{}
+\automark[subsection]{section}
+\setheadsepline{.1pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \tableofcontents
+
 \newpage
 \listoffigures
+
 \newpage
 \pagenumbering{arabic}
 
+
+\doublespace
+
 \include{10-subject}
 
+\singlespace
 \subsection{Annotated Bibliography}
-
 \nocite{*}
 \bibliographystyle{jurabib}
-
 \bibliography{99-references}
 
+\doublespace
 \include{20-strategic_setting}
 \include{30-operational_situation}
 \include{40-tactical_situation}

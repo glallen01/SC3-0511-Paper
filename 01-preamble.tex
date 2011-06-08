@@ -1,27 +1,44 @@
+\documentclass[
+	titlepage,
+	12pt,
+	letterpaper,
+	smallheadings,
+	twoside,
+	%parskip-,
+	%liststotoc,
+	pdftex]{scrartcl}
+
 \usepackage[margin=1in]{geometry}
 
 %\usepackage{pdftex}
 %\usepackage[pdftex]{graphicx}
 \usepackage{graphicx}
 \usepackage{jurabib}
-\usepackage{hyperref}
+\usepackage[pdftex]{hyperref}
 \usepackage{setspace}
+\usepackage{wrapfig}
+\usepackage{lipsum}		% delete this later
+\usepackage[small,compact]{titlesec}
 \doublespace
 
+\usepackage{color}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
 
+\usepackage{scrpage2} % vs. fancyhdr for komascript
 
-%\usepackage[small,compact]{titlesec}
+\setlength{\headheight}{1.1\baselineskip}
+
 
 %%% headings
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\lhead{SCCC 05-11A}
-\chead{}
-\rhead{\thepage}
-\lfoot{}
-\cfoot{}
-\rfoot{}
-\renewcommand{\headrulewidth}{0.4pt}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \lhead{SCCC 05-11A}
+% \chead{}
+% \rhead{\thepage}
+% \lfoot{}
+% \cfoot{}
+% \rfoot{}
+% \renewcommand{\headrulewidth}{0.4pt}
 %%%
 
 % For Times (Nimbus Roman) Font:
@@ -36,20 +53,29 @@
 \jurabibsetup{
         %authorformat=smallcaps,
         authorformat={year,and},%authorformat=and,      authorformat=year,
-        round,
-        titleformat=italic,%
-        titleformat=all,%
+%        round,
+%        titleformat=italic,%
+%        titleformat=all,%
         titleformat=commasep,%
         commabeforerest,%
-        ibidem=strict,%
-        bibformat=ibidem,% bibformat=compress,%
-        bibformat=raggedright,
-        dotafter=bibentry,
+        % ibidem=strict,%
+	% bibformat=compress,%
+	bibformat=raggedright,
+	dotafter=bibentry,
         %pages=format,%
 	annote,
+	bibformat=nohang,
+	bibformat=ibidem,
 }
 
 \renewcommand{\bibansep}{, }                    % Want a comma instead of a colon after the Author:
+\renewcommand{\bibauthormultiple}{------~}
+\renewcommand{\bibtfont}{\textit}
+\renewcommand{\bibbtfont}{\textit}
+\bibAnnotePath{{annotations/}}
+%\renewcommand{\refname}{Annotated Bibliography}
+\renewcommand{\refname}{}
+
 %\jbyearaftertitle
 %\renewcommand{\jbcitationyearformat}[1]{#1}
 %\renewcommand{\bibansep}{, }

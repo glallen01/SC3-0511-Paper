@@ -10,6 +10,9 @@ push: pdf
 	git commit -a -m "Makefile PDF Build/Push"
 	git push
 
+annote_blanks:
+	grep @ 99-references.bib | cut -d{ -f2 | cut -d, -f1 | xargs -i touch annotations/{}.tex \;
+
 clean:
 	rm *.fdb_latexmk *.bbl *.log *.aux *.blg *.dvi *.pdf *.toc *.url *.lof
 

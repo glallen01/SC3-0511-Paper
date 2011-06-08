@@ -9,3 +9,5 @@
 *.swp
 *.blg
 *.lof
+*.out
+*.orig

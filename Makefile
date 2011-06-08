@@ -1,5 +1,6 @@
+00-Main.pdf: pdf
 
-pdf: 00-Main.pdf
+pdf:
 	pdflatex 00-Main.tex
 	bibtex   00-Main
 	pdflatex 00-Main.tex

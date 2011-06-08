@@ -1,77 +1,7 @@
 \documentclass[letterpaper,12pt,smallheadings]{scrartcl}
-\usepackage[margin=1in]{geometry}
-
-%\usepackage{pdftex}
-%\usepackage[pdftex]{graphicx}
-\usepackage{graphicx}
-\usepackage{jurabib}
-
-\usepackage{setspace}
-\doublespace
 
 
-
-%\usepackage[small,compact]{titlesec}
-
-%%% headings
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\lhead{SCCC 05-11A}
-\chead{}
-\rhead{\thepage}
-\lfoot{}
-\cfoot{}
-\rfoot{}
-\renewcommand{\headrulewidth}{0.4pt}
-%%%
-
-% For Times (Nimbus Roman) Font:
-\usepackage[T1]{fontenc}
-\usepackage{mathptmx}
-
-%\jurabibsetup{
-%	citefull=first,
-%	ibidem=strict,
-%	commabeforerest,
-%}
-\jurabibsetup{
-        %authorformat=smallcaps,
-        authorformat={year,and},%authorformat=and,      authorformat=year,
-        round,
-        titleformat=italic,%
-        titleformat=all,%
-        titleformat=commasep,%
-        commabeforerest,%
-        ibidem=strict,%
-        bibformat=ibidem,% bibformat=compress,%
-        bibformat=raggedright,
-        dotafter=bibentry,
-        %pages=format,%
-	annote,
-}
-
-\renewcommand{\bibansep}{, }                    % Want a comma instead of a colon after the Author:
-%\jbyearaftertitle
-%\renewcommand{\jbcitationyearformat}[1]{#1}
-%\renewcommand{\bibansep}{, }
-%\renewcommand{\bibatsep}{.}
-%\renewcommand{\bibapifont}{\textit}
-%\renewcommand{\biblnfont}{}
-%\renewcommand{\bibfnfont}{}
-%\renewcommand{\bibelnfont}{}
-%\renewcommand{\bibefnfont}{}
-%\renewcommand{\bibtfont}{\textit}
-%\renewcommand{\bibbtfont}{\textit}
-%\renewcommand{\bibjtfont}{}
-
-\newenvironment{blkquote}[1][1]
-    { \begin{quote}\begin{spacing}{ #1}\small }
-        { \end{spacing}\end{quote} \vspace{-24pt} }
-\deffootnote{1.5em}{1em}{%
-        \makebox[1.5em][l]{\thefootnotemark}}
-
-
-
+\include{01-preamble}
 
 \begin{document}
 \pagenumbering{roman}

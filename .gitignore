@@ -12,3 +12,8 @@
 *.out
 *.old
 *.orig
+*.idx
+*.ilg
+*.ind
+*.lot
+*.latexmain

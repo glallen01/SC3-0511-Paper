@@ -19,14 +19,15 @@
 \usepackage{wrapfig}
 \usepackage{lipsum}		% delete this later
 \usepackage[small,compact]{titlesec}
-\doublespace
-
 \usepackage{color}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 
 \usepackage{scrpage2} % vs. fancyhdr for komascript
-
+\usepackage{booktabs}
 \setlength{\headheight}{1.1\baselineskip}
+
+\usepackage{makeidx}
+\makeindex
 
 
 %%% headings
@@ -58,7 +59,7 @@
 %        titleformat=all,%
         titleformat=commasep,%
         commabeforerest,%
-        % ibidem=strict,%
+        ibidem=strict,%
 	% bibformat=compress,%
 	bibformat=raggedright,
 	dotafter=bibentry,

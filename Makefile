@@ -1,8 +1,9 @@
 00-Main.pdf: pdf
 
-pdf:
+pdf: 00-Main.tex
 	pdflatex 00-Main.tex
-	bibtex   00-Main
+	bibtex    00-Main
+	makeindex 00-Main
 	pdflatex 00-Main.tex
 	pdflatex 00-Main.tex
 	

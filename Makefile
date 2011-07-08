@@ -15,6 +15,21 @@ annote_blanks:
 	grep @ 99-references.bib | cut -d{ -f2 | cut -d, -f1 | xargs -i touch annotations/{}.tex \;
 
 clean:
-	rm *.fdb_latexmk *.bbl *.log *.aux *.blg *.dvi *.pdf *.toc *.url *.lof
-
+	-rm -f \
+		*.fdb_latexmk \
+		*.bbl \
+		*.log \
+		*.aux \
+		*.blg \
+		*.dvi \
+		*.pdf \
+		*.toc \
+		*.url \
+		*.lof \
+		*.orig \
+		*.idx \
+		*.ilg \
+		*.ind \
+		*.out \
+		*.lot 
 

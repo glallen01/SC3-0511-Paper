@@ -33,3 +33,5 @@ clean:
 		*.out \
 		*.lot 
 
+# sam2p - image conversion
+

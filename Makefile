@@ -39,7 +39,8 @@ clean:
 		*.ilg \
 		*.ind \
 		*.out \
-		*.lot 
+		*.lot \
+		*.url
 
 # sam2p - image conversion
 

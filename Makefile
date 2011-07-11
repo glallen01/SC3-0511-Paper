@@ -6,6 +6,14 @@ pdf: 00-Main.tex
 	makeindex 00-Main
 	pdflatex 00-Main.tex
 	pdflatex 00-Main.tex
+
+# this is ugly... fix later
+XOPT=-output-directory bib
+xx-references.pdf: bib/xx-references.tex
+	pdflatex ${XOPT} bib/xx-references.tex
+	TEXMFOUTPUT=bib bibtex bib/xx-references 
+	pdflatex ${XOPT} bib/xx-references.tex
+	pdflatex ${XOPT} bib/xx-references.tex
 	
 push: pdf
 	git commit -a -m "Makefile PDF Build/Push"

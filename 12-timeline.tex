@@ -1,0 +1,99 @@
+\documentclass[10pt,letterpaper]{article}
+
+%\usepackage{a4wide}
+\usepackage[]{color}
+\usepackage{timeline/timeline}
+\usepackage{ctable}
+\usepackage[margin=1.0in]{geometry}
+
+\pagestyle{empty}
+
+% \title{History of Voting Technology in the United States}
+% \author{Tim Storer}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\renewcommand{\eventdate}[2]{
+\if 0#1
+ \tiny\bf#2
+\else
+ \tiny\bf\ToShortMonth{#1}, #2 
+\fi
+}
+
+\begin{document}
+%\maketitle
+
+%\definecolor{BGColor}{rgb}{1.0,1.0,1.0}
+%\definecolor{ChartColor}{rgb}{1.0,1.0,1.0}
+%\begin{timeline}{1745}{1800}{400}{400}
+%\YearEvent{1749}{Commandant C\'eloron lays claim to the Ohio Valley for France}
+%\MonthAndYearEvent{11}{1749}{?? Navigation Acts}
+%\YearEvent{1754}{French and Indian War begins}
+%\YearEvent{1754}{?? Seven Years War begins}
+%\MonthAndYearEvent{1}{1757}{Benjamin Franklin travels to London as a Colonial representative}
+%\MonthAndYearEvent{10}{1760}{King George III ascends to the throne of England}
+%\MonthAndYearEvent{11}{1761}{James Otis challenges the Writs of Assistance, allowing searches to prevent smuggling, as violations of the constitutional rights of colonists.}
+%\MonthAndYearEvent{2}{1763}{Seven Years War ends with the treaty of !!!}
+%\MonthAndYearEvent{10}{1763}{Proclamation of 1763: King George III forbids colonists settling west of the Appalachian Mountains.}
+%
+%\MonthAndYearEvent{1}{1764}{?? Currency Act: }
+%\MonthAndYearEvent{1}{1764}{?? Quartering Act: }
+%\MonthAndYearEvent{1}{1764}{?? Currency Act: }
+%\MonthAndYearEvent{4}{1764}{Sugar Act passed prompting cries of ``Taxation without Representation''}
+%
+%\MonthAndYearEvent{1}{1775}{Benjamin Franklin departs London a `determined revolutionary' (Cook, xii)}
+%\YearEvent{1776}{\red{Adam Smith publishes the \em{Wealth of Nations}}}
+%\MonthAndYearEvent{9}{1783}{The American Revolution ends with the treaty of !!!}
+%\end{timeline}
+
+\ctable[
+  caption={Timeline of events leading to the American Revolution.}
+  ]{lp{4in}}{}{											\FL
+Year 		& Event 									\ML
+1749 		& Commandant C\'eloron lays claim to the Ohio Valley for France 		\NN
+\red{Nov. 1749}	& ?? Navigation Acts								\NN
+1754		& French and Indian War begins							\NN
+\red{1754}	& ?? Seven Years War begins 							\NN
+Jan. 1757	& Benjamin Franklin travels to London as a Colonial representative		\NN
+Oct. 1760	& King George III ascends to the throne of England				\NN
+Nov. 1761	& James Otis challenges the Writs of Assistance, allowing searches to prevent
+		  smuggling, as violations of the constitutional rights of colonists.		\NN
+Feb. 1763	& Seven Years War ends with the treaty of !!!					\NN
+Oct. 1763	& Proclamation of 1763: King George III forbids colonists settling west of
+		  the Appalachian Mountains.							\NN
+~		& \red{Currency Act:}								\NN
+~		& \red{Quartering Act:}								\NN
+Apr. 1764	& \red{Sugar Act:} passed prompting cries of ``Taxation without Representation''\NN
+Jan. 1775	& Benjamin Franklin departs London a `determined revolutionary' (Cook, xii) 	\NN
+1776		& \red{Adam Smith publishes the \emph{Wealth of Nations}}			\NN
+Sep. 1783	& The American Revolution ends with the treaty of !!!				\NN
+~ 		& ~ 										\LL
+}
+
+%---------------------
+% % http://militaryhistory.about.com/od/americanrevolution/a/amrevcauses.htm
+% Rise of Liberalism and Republicanism
+% 
+% As tensions regarding colonial lands and taxation increased during the 1760s
+% and 1770s, many American leaders were influenced by the liberal and republican
+% ideals espoused by Enlightenment writers such as John Locke. Key among Locke's
+% theories was that of the ``social contract'' which stated that legitimate state
+% authority must be derived from the consent of the governed. Also, that should
+% the government abuse the rights of the governed, it was the natural
+% responsibility of the people to rise up and overthrow their leaders. The ideas
+% of Locke and other similar writers contributed to the American embrace of
+% ``republican'' ideology in the years before the Revolution. Standing in
+% opposition to tyrants, republicanism called for the protection liberty through
+% the rule of law and civic virtue.
+%--------------------------
+
+% \MonthAndYearEvent{1}{1749}{Intolerable Acts}
+% \MonthAndYearEvent{1}{1749}{End of Sir Robert Walpole's `Salutary Neglect' policy (Cook, 3)}
+% \MonthAndYearEvent{1}{1749}{Boston Tea Party}
+% \MonthAndYearEvent{1}{1749}{Stamp Act}
+% \MonthAndYearEvent{1}{1749}{}
+% \MonthAndYearEvent{1}{1749}{}
+
+
+
+\end{document}

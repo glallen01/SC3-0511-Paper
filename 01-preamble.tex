@@ -61,7 +61,9 @@
 %}
 \jurabibsetup{
         %authorformat=smallcaps,
-        authorformat={year,and},%authorformat=and,      authorformat=year,
+	%authorformat={year,and},	% for \cite[p. 1]{foo} -> (Foo 2001, p. 1)
+	authorformat=and,		% for \cite[p. 1]{foo} -> (Foo, p. 1)
+	%authorformat=year,
         round,
 %        titleformat=italic,%
 %        titleformat=all,%
@@ -75,7 +77,8 @@
 	annote,
 	% bibformat=nohang,
 	bibformat=ibidem,
-	%super,		%makes all \cite into \footcite
+	hypercite=false,	% diables turning all \cite into reference with hyperref enabled
+	%super,			% makes all \cite into \footcite
 }
 
 \renewcommand{\bibansep}{, }                    % Want a comma instead of a colon after the Author:

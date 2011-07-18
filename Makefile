@@ -22,6 +22,9 @@ push: pdf
 annote_blanks:
 	grep @ 99-references.bib | cut -d{ -f2 | cut -d, -f1 | xargs -i touch annotations/{}.tex \;
 
+# add to bib
+# cat /tmp/Exported\ Items.bib >> 99-references.bib ; make annote_blanks
+
 clean:
 	-rm -f \
 		*.fdb_latexmk \

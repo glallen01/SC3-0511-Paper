@@ -3,39 +3,54 @@
 	12pt,
 	letterpaper,
 	headings=small,
-	twoside,
-	%parskip-,
+	%twoside,
+	oneside,
+	%parskip=half-,
+	parindent,
 	%liststotoc,
+	%draft,
 	pdftex]{scrartcl}
 
-\usepackage[T1]{fontenc}
-\usepackage{mathptmx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{setspace}		% turns off in floats and tables
+\doublespacing
 
-\usepackage[margin=1in]{geometry}
+% For Times (Nimbus Roman) Font:
+\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+\usepackage{tgtermes}
 
 %\usepackage{pdftex}
 %\usepackage[pdftex]{graphicx}
 \usepackage{graphicx}
+
 \usepackage{jurabib}
 \usepackage[pdftex]{hyperref}
-\usepackage{setspace}
 \usepackage{wrapfig}
-\usepackage{lipsum}		% delete this later
-\usepackage[small,compact]{titlesec}
-\usepackage{color}
-\newcommand{\red}[1]{\textcolor{red}{#1}}
-
-\usepackage{scrpage2} % vs. fancyhdr for komascript
-
-\usepackage{booktabs}	% Remove one of these and convert the others
-\usepackage{ctable}	%
-
-\setlength{\headheight}{1.1\baselineskip}
 
 \usepackage{makeidx}
 \makeindex
 
+\usepackage{lipsum}		% delete this later
 
+\usepackage[small,compact]{titlesec}
+\usepackage{color}
+
+%\usepackage{booktabs}	% Remove one of these and convert the others
+\usepackage{ctable}	%
+
+%----- local definitions ----
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\setlength{\headheight}{1.1\baselineskip}
+\usepackage{scrpage2} % vs. fancyhdr for komascript
+
+\newenvironment{blkquote}[1][1]
+  { \begin{quote}\begin{spacing}{ #1}\small }
+  { \end{spacing}\end{quote} \vspace{-24pt} }
+
+\deffootnote{1.5em}{1em}{%
+  \makebox[1.5em][l]{\thefootnotemark}}
 
 
 %%% headings
@@ -50,9 +65,6 @@
 % \renewcommand{\headrulewidth}{0.4pt}
 %%%
 
-% For Times (Nimbus Roman) Font:
-\usepackage[T1]{fontenc}
-\usepackage{mathptmx}
 
 %\jurabibsetup{
 %	citefull=first,
@@ -86,8 +98,8 @@
 \renewcommand{\bibtfont}{\textit}
 \renewcommand{\bibbtfont}{\textit}
 \bibAnnotePath{{annotations/}}
-%\renewcommand{\refname}{Annotated Bibliography}
-\renewcommand{\refname}{}
+\renewcommand{\refname}{Annotated Bibliography}
+%\renewcommand{\refname}{}
 
 %\jbyearaftertitle
 %\renewcommand{\jbcitationyearformat}[1]{#1}
@@ -101,11 +113,4 @@
 %\renewcommand{\bibtfont}{\textit}
 %\renewcommand{\bibbtfont}{\textit}
 %\renewcommand{\bibjtfont}{}
-
-\newenvironment{blkquote}[1][1]
-    { \begin{quote}\begin{spacing}{ #1}\small }
-        { \end{spacing}\end{quote} \vspace{-24pt} }
-\deffootnote{1.5em}{1em}{%
-        \makebox[1.5em][l]{\thefootnotemark}}
-
 

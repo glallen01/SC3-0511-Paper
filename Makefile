@@ -22,8 +22,6 @@ push: pdf
 annote_blanks:
 	grep @ 99-references.bib | cut -d{ -f2 | cut -d, -f1 | xargs -i touch annotations/{}.tex \;
 
-# add to bib
-# cat /tmp/Exported\ Items.bib >> 99-references.bib ; make annote_blanks
 
 clean:
 	-rm -f \
@@ -47,3 +45,11 @@ clean:
 
 # sam2p - image conversion
 
+# add to bib
+# cat /tmp/Exported\ Items.bib >> 99-references.bib ; make annote_blanks
+#
+# sed -e 's/[a-zA-Z]*//g' -e 's/ //g' -e's/“/\`\`/' -e"s/”/''/g" test.txt
+# sed -e 's/[a-zA-Z0-9,\.\-\(\) ]*//g' -e's/-/--/g' -e's/“/\`\`/g' -e"s/”/''/g" -e"s/…/\\\ldots /g" test.txt
+# sed -e's/-/--/g' -e's/“/\`\`/g' -e"s/”/''/g" -e"s/…/\\\ldots /g" test.txt
+#
+# cat test.txt| sed -e's/-/--/g' -e's/“/\`\`/g' -e"s/”/''/g" -e"s/…/\\\ldots /g" -e"s/$/\n/" -e"s/’/'/g" | fmt --width=80

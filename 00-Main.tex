@@ -5,60 +5,67 @@
 
 \pagenumbering{roman}
 
-\singlespace
-
 \thispagestyle{empty}
+
 \begin{titlepage}
 	\begin{center}
+	  \begin{singlespace}
 		BATTLE ANALYSIS\\
 		\vspace{3em}
 		THE BATTLE OF COWPENS\\
 		\vspace{3em}
 		SCCC CLASS \#05-11, GROUP \#1\\
 		\vspace{3em}
-		Ian Alvarado\\
+		CPT Ivan Alvarado\\
 		\vspace{1em}
-		George Allen\\
-		Bieber\\
-		Cvetkovski\\
-		Flores\\
-		Futch\\
-		Hudak\\
-		Kalmus\\
-		Nagle\\
-		Nicholson\\
+		CPT George Allen\\
+		CPT Christopher Bieber\\
+		CPT Ljupcho Cvetkovski\\
+		CPT Isreal Flores\\
+		CPT Sean Futch\\
+		CPT Thomas Hudak\\
+		1LT Alar Kalmus\\
+		CPT Luke Nagle\\
+		CPT Justin Nicholson\\
+	  \end{singlespace}
 	\end{center}
 \end{titlepage}
 
 %%   if using scrpage2    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{scrheadings}
-%\ohead{\pagemark}
+\ohead{\headmark}
 \ihead{SCCC 05-11A1}%
-\cfoot{}
+\chead{}
 \automark[subsection]{section}
 \setheadsepline{.1pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{singlespace}
 \tableofcontents
 \listoffigures
 \listoftables
+\end{singlespace}
 
 \newpage
 \pagenumbering{arabic}
 
-%\doublespace
+\newpage
 \input{10-subject}
-%\doublespace
+\newpage
 \input{20-strategic_setting}
 \input{21-comparison}
-\input{30-operational_situation}
-\input{40-tactical_situation}
-\input{50-action}
-\input{60-significance}
-\input{90-notes}
-\input{91-notes}
-
 \newpage
-\printindex
+\input{30-operational_situation}
+\newpage
+\input{40-tactical_situation}
+\newpage
+\input{50-action}
+\newpage
+\input{60-significance}
+% \input{90-notes}
+% \input{91-notes}
+
+%\newpage
+%\printindex
 
 \end{document}

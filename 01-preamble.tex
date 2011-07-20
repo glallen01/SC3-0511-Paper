@@ -11,9 +11,14 @@
 	%draft,
 	pdftex]{scrartcl}
 
+\usepackage[utf8x]{inputenc}	% for windows quotes without having to sed them out
+% or
+% cat test.txt| sed -e's/-/--/g' -e's/“/\`\`/g' -e``s/”/''/g`` -e''s/…/\\\ldots /g`` -e''s/$/\n/`` -e''s/’/'/g`` | fmt --width=80
+%
+\usepackage{microtype}
 \usepackage[margin=1in,letterpaper]{geometry}
 \usepackage{setspace}		% turns off in floats and tables
-\doublespacing
+%\doublespacing
 
 % For Times (Nimbus Roman) Font:
 \usepackage[T1]{fontenc}
@@ -72,25 +77,25 @@
 %	commabeforerest,
 %}
 \jurabibsetup{
-        %authorformat=smallcaps,
-	%authorformat={year,and},	% for \cite[p. 1]{foo} -> (Foo 2001, p. 1)
-	authorformat=and,		% for \cite[p. 1]{foo} -> (Foo, p. 1)
-	%authorformat=year,
-        round,
-%        titleformat=italic,%
-%        titleformat=all,%
-        titleformat=commasep,%
-        commabeforerest,%
-%        ibidem=strict,%
 	% bibformat=compress,%
+	% bibformat=nohang,
+	%authorformat=year,
+	%authorformat={year,and},	% for \cite[p. 1]{foo} -> (Foo 2001, p. 1)
+	%super,			% makes all \cite into \footcite
+        %authorformat=smallcaps,
+        %pages=format,%
+%        titleformat=all,%
+%        titleformat=italic,%
+%        ibidem=strict,%
+	annote,
+	authorformat=and,		% for \cite[p. 1]{foo} -> (Foo, p. 1)
+	bibformat=ibidem,
 	bibformat=raggedright,
 	dotafter=bibentry,
-        %pages=format,%
-	annote,
-	% bibformat=nohang,
-	bibformat=ibidem,
 	hypercite=false,	% diables turning all \cite into reference with hyperref enabled
-	%super,			% makes all \cite into \footcite
+        commabeforerest,%
+        round,
+        titleformat=commasep,%
 }
 
 \renewcommand{\bibansep}{, }                    % Want a comma instead of a colon after the Author:
@@ -99,7 +104,7 @@
 \renewcommand{\bibbtfont}{\textit}
 \bibAnnotePath{{annotations/}}
 \renewcommand{\refname}{Annotated Bibliography}
-%\renewcommand{\refname}{}
+\renewcommand*{\jbannoteformat}[1]{{\fontsize{12pt}{1.2 \times 12pt}\begin{quote}#1\end{quote}}}
 
 %\jbyearaftertitle
 %\renewcommand{\jbcitationyearformat}[1]{#1}

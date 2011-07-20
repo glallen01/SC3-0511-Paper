@@ -17,3 +17,16 @@
 *.ind
 *.lot
 *.latexmain
+
+00-Main.rtf
+bib/draft-bibliography-consolidation.pdf
+bib/12-timeline.tex
+bib/test2.pdf
+bib/timeline-build.pdf
+bib/timeline-build.tex
+bib/xx-references.pdf
+cook-notes.txt
+extra/
+timeline/documentation.txt
+timeline/example.pdf
+timeline/example.tex

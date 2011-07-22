@@ -1,3 +1,29 @@
+
+# replace (Author, ...) with \cite[...]{Author]
+#
+#  vim: 
+#  s/(\([^)]*\), \([^)]*\))/\\cite[\2]{\1}/g
+#
+#  s/(\(.*Nich.*\))/\r%%%\r***See Fig: \1\r%%%\r/g
+# 
+#  s/(\(.*Nich.*\))/\r%%%\r\\begin{figure}[h]\r\\begin{center}\r\\includegraphics[width=6in]{\r*******\1\r}\r\\end{center}\r\\caption{\r\\cite{***}}\r\\label{***}\r\\end{figure}\r%%%\r/g
+#
+#
+#
+#
+# \begin{figure}[h]
+#   \begin{center}
+#   \includegraphics[width=6in]{gfx/futch1}
+#   \end{center}
+#   \caption{Terrain overview of the Battle of Cowpens.
+#   \cite{wilson_blogmap}}
+#   \label{terrain1}
+# \end{figure}
+#
+#
+#
+
+
 00-Main.pdf: pdf
 
 pdf: 00-Main.tex

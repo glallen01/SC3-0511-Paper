@@ -15,6 +15,8 @@
 % or
 % cat test.txt| sed -e's/-/--/g' -e's/“/\`\`/g' -e``s/”/''/g`` -e''s/…/\\\ldots /g`` -e''s/$/\n/`` -e''s/’/'/g`` | fmt --width=80
 %
+
+
 \usepackage{microtype}
 \usepackage[margin=1in,letterpaper]{geometry}
 \usepackage{setspace}		% turns off in floats and tables
@@ -28,10 +30,14 @@
 %\usepackage{pdftex}
 %\usepackage[pdftex]{graphicx}
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
 
 \usepackage{ragged2e}		% recommended by jurabib for better ragged right
 \usepackage{jurabib}
-\usepackage[pdftex]{hyperref}
+\usepackage[breaklinks=true,
+	hyperfootnotes=false,
+	linktocpage=true]{hyperref}
 \usepackage{wrapfig}
 
 \usepackage{makeidx}
@@ -97,10 +103,12 @@
 	hypercite=false,	% diables turning all \cite into reference with hyperref enabled
         commabeforerest,%
         round,
+	%howcited=compare,
         titleformat=commasep,%
 }
 
 \bibAnnotePath{{annotations/}}
+\citetitlefortype{manual}
 
 \renewcommand{\refname}{Annotated Bibliography}
 
@@ -119,7 +127,7 @@
 
 \renewcommand{\bibtfont}{\textit}
 \renewcommand{\bibbtfont}{\textit}
-\renewcommand*{\jbannoteformat}[1]{{\fontsize{12pt}{1.2 \times 12pt}\begin{quote}#1\end{quote}}}
+\renewcommand*{\jbannoteformat}[1]{{\fontsize{11pt}{1.2 \times 12pt}\begin{quote}#1\end{quote}}}
 
 %\jbyearaftertitle
 %\renewcommand{\jbcitationyearformat}[1]{#1}

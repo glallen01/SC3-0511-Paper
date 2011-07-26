@@ -34,10 +34,6 @@
 \usepackage{wrapfig}
 
 \usepackage{ragged2e}		% recommended by jurabib for better ragged right
-\usepackage{jurabib}
-\usepackage[breaklinks=true,
-	hyperfootnotes=false,
-	linktocpage=true]{hyperref}
 \usepackage{wrapfig}
 
 \usepackage{makeidx}
@@ -91,67 +87,3 @@
 % \rfoot{}
 % \renewcommand{\headrulewidth}{0.4pt}
 %%%
-
-
-%\jurabibsetup{
-%	citefull=first,
-%	ibidem=strict,
-%	commabeforerest,
-%}
-\jurabibsetup{
-	% bibformat=compress,%
-	% bibformat=nohang,
-	%authorformat=year,
-	%authorformat={year,and},	% for \cite[p. 1]{foo} -> (Foo 2001, p. 1)
-	%super,			% makes all \cite into \footcite
-        %authorformat=smallcaps,
-        %pages=format,%
-	%titleformat=all,%
-	%titleformat=italic,%
-	%ibidem=strict,%
-	annote,
-	authorformat=and,		% for \cite[p. 1]{foo} -> (Foo, p. 1)
-	bibformat=ibidem,
-	bibformat=raggedright,
-	bibformat=compress,
-	dotafter=bibentry,
-	hypercite=false,	% diables turning all \cite into reference with hyperref enabled
-        commabeforerest,%
-        round,
-	%howcited=compare,
-        titleformat=commasep,%
-}
-
-\bibAnnotePath{{annotations/}}
-\citetitlefortype{manual}
-
-\renewcommand{\refname}{Annotated Bibliography}
-
-\renewcommand{\jbbtasep}{ and }		% bta = between two authors sep
-\renewcommand{\jbbfsasep}{, }		% bfsa = between first and second author sep
-\renewcommand{\jbbstasep}{ and }	% bsta = between second and third author sep
-\renewcommand{\bibansep}{, }                    % Want a comma instead of a colon after the Author:
-\renewcommand{\bibbtasep}{ and } 	% bta = between two authors sep
-\renewcommand{\bibbfsasep}{, } 		% bfsa = between first and second author sep
-\renewcommand{\bibbstasep}{ and }	% bsta = between second and third author sep
-\renewcommand{\bibbtesep}{ and } 	% bte = between two editors sep
-\renewcommand{\bibbfsesep}{, } 		% bfse = between first and second editor sep
-\renewcommand{\bibbstesep}{ and }	% bste = between second and third editor sep
-
-\renewcommand{\bibauthormultiple}{------~}
-
-\renewcommand{\bibtfont}{\textit}
-\renewcommand{\bibbtfont}{\textit}
-\renewcommand*{\jbannoteformat}[1]{{\fontsize{11pt}{1.2 \times 12pt}\begin{quote}#1\end{quote}}}
-
-%\jbyearaftertitle
-%\renewcommand{\jbcitationyearformat}[1]{#1}
-%\renewcommand{\bibansep}{, }
-%\renewcommand{\bibatsep}{.}
-%\renewcommand{\bibapifont}{\textit}
-%\renewcommand{\biblnfont}{}
-%\renewcommand{\bibfnfont}{}
-%\renewcommand{\bibelnfont}{}
-%\renewcommand{\bibefnfont}{}
-%\renewcommand{\bibjtfont}{}
-

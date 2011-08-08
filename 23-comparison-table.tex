@@ -10,11 +10,16 @@
 %  	cap=foo,
 %	caption=Elements of National Power,
 %	]{l>{\tiny}p{2.7in}>{\tiny}p{2.7in}}{}{\FL
+%%\begin{table}[h]
 \begin{singlespace}
-  \footnotesize
-  \tablecaption{Comparison of the Antagonists}
+\footnotesize
+  \tablecaption{Comparison of elements of national power of the antagonists in the American Revolutionary War}
+  %\tablecaption{Comparison of the Antagonists}
   \tablefirsthead{\FL\centering{USA} & \centering{Great Britain}\ML}
+  \tabletail{\ML\multicolumn{2}{c}{\centering{continued\ldots}}\ML}
+  \tablelasttail{}
   \tablehead{     \multicolumn{2}{c}{Comparison of the Antagonists, (cont)}\NN\centering{USA} & \centering{Great Britain}\NN}
+  \label{table:comparison}
 \begin{mpxtabular}{p{3in}p{3in}}%\FL
   %\centering{USA} & \centering{Great Britain} \ML
   \multicolumn{2}{c}{Diplomatic}\ML
@@ -109,6 +114,7 @@
 	    \item Had banks, national currency, and well established paying systems 
 	    \item Had tax system that collected money 
 	\end{itemize}\ML
-	\end{mpxtabular}
+      \end{mpxtabular}
 \end{singlespace}
+%\end{table}
 %\end{document}

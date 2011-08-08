@@ -11,42 +11,26 @@
 	%draft,
 	pdftex]{scrartcl}
 
-\usepackage[utf8x]{inputenc}	% for windows quotes without having to sed them out
-% or
-% cat test.txt| sed -e's/-/--/g' -e's/“/\`\`/g' -e``s/”/''/g`` -e''s/…/\\\ldots /g`` -e''s/$/\n/`` -e''s/’/'/g`` | fmt --width=80
-%
-
-
-\usepackage{microtype}
 \usepackage[margin=1in,letterpaper]{geometry}
-\usepackage{setspace}		% turns off in floats and tables
-\doublespacing
+\usepackage[utf8x]{inputenc}	% for windows quotes without having to sed them out
+% cat test.txt| sed -e's/-/--/g' -e's/“/\`\`/g' -e``s/”/''/g`` -e''s/…/\\\ldots /g`` -e''s/$/\n/`` -e''s/’/'/g`` | fmt --width=80
 
-% For Times (Nimbus Roman) Font:
-\usepackage[T1]{fontenc}
-%\usepackage{mathptmx}
-\usepackage{tgtermes}
-
-%\usepackage{pdftex}
-%\usepackage[pdftex]{graphicx}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{wrapfig}
-
-\usepackage{ragged2e}		% recommended by jurabib for better ragged right
-\usepackage{wrapfig}
-
-\usepackage{makeidx}
-\makeindex
-
-\usepackage{lipsum}		% delete this later
-
+\usepackage[T1]{fontenc}		% For Times (Nimbus Roman) Font:
 \usepackage[small,compact]{titlesec}
 \usepackage{color}
-
-%\usepackage{booktabs}	% Remove one of these and convert the others
-\usepackage{ctable}	%
+\usepackage{ctable}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{lipsum}			% delete this later
+\usepackage{makeidx} \makeindex
+\usepackage{microtype}
 \usepackage{multirow}
+\usepackage{ragged2e}			% recommended by jurabib for better ragged right
+\usepackage{setspace} \doublespacing	% turns off in floats and tables
+\usepackage{tgtermes}
+\usepackage{wrapfig}
+\usepackage{xtab}
 
 %----- local definitions ----
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -77,14 +61,3 @@
   \makebox[1.5em][l]{\thefootnotemark}}
 
 
-%%% headings
-% \usepackage{fancyhdr}
-% \pagestyle{fancy}
-% \lhead{SCCC 05-11A}
-% \chead{}
-% \rhead{\thepage}
-% \lfoot{}
-% \cfoot{}
-% \rfoot{}
-% \renewcommand{\headrulewidth}{0.4pt}
-%%%

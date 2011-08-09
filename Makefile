@@ -67,7 +67,13 @@ clean:
 		*.ind \
 		*.out \
 		*.lot \
-		*.url
+		*.url \
+		00-Main.bcf \
+		00-Main-blx.bib \
+		00-Main.brf \
+		00-Main.ent \
+		00-Main.rtf \
+		00-Main.run.xml
 
 # sam2p - image conversion
 

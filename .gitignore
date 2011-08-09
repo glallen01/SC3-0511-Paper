@@ -18,16 +18,10 @@
 *.lot
 *.latexmain
 
+00-Main-blx.bib
+00-Main.bcf
+00-Main.brf
+00-Main.ent
 00-Main.rtf
-bib/draft-bibliography-consolidation.pdf
-bib/12-timeline.tex
-bib/test2.pdf
-bib/timeline-build.pdf
-bib/timeline-build.tex
-bib/xx-references.pdf
-cook-notes.txt
-extra/
-timeline/documentation.txt
-timeline/example.pdf
-timeline/example.tex
-ref_pdfs/
+00-Main.run.xml
+00-Main.tex

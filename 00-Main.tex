@@ -2,61 +2,65 @@
 \input{01-preamble}
 \input{02-biboptions}
 
+
+%%   if using scrpage2    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{scrheadings}
+\automark{section}
+\ohead{\headmark}
+\ihead{SCCC 05-11A1}%
+\chead{}
+\ifoot{}\ofoot{}
+\cfoot{\pagemark}
+\setheadsepline{.1pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
 \pagenumbering{roman}
 
-\thispagestyle{empty}
-
 \begin{titlepage}
-	\begin{center}
-	  \begin{singlespace}
-		BATTLE ANALYSIS\\
-		\vspace{3em}
-		THE BATTLE OF COWPENS\\
-		\vspace{3em}
-		SCCC CLASS \#05-11, GROUP \#A-1\\
-		\vspace{3em}
-		Group leader:\\
-		\vspace{1em}
-		CPT Ivan Alvarado\\
-		\vspace{2em}
-		Group members:\\
-		\vspace{1em}
-		CPT George Allen\\
-		CPT Christopher Bieber\\
-		CPT Ljupcho Cvetkovski\\
-		CPT Isreal Flores\\
-		CPT Sean Futch\\
-		CPT Thomas Hudak\\
-		1LT Alar Kalmus\\
-		CPT Luke Nagle\\
-		CPT Justin Nicholson\\
-	  \end{singlespace}
-	\end{center}
+  \thispagestyle{empty}
+  \begin{center}
+    \begin{singlespace}
+      BATTLE ANALYSIS\\
+      \vspace{3em}
+      THE BATTLE OF COWPENS\\
+      \vspace{3em}
+      SCCC CLASS \#05-11, GROUP \#A-1\\
+      \vspace{3em}
+      Group leader:\\
+      \vspace{1em}
+      CPT Ivan Alvarado\\
+      \vspace{2em}
+      Group members:\\
+      \vspace{1em}
+      CPT George Allen\\
+      CPT Christopher Bieber\\
+      CPT Ljupcho Cvetkovski\\
+      CPT Isreal Flores\\
+      CPT Sean Futch\\
+      CPT Thomas Hudak\\
+      1LT Alar Kalmus\\
+      CPT Luke Nagle\\
+      CPT Justin Nicholson\\
+    \end{singlespace}
+  \end{center}
 \end{titlepage}
 
-%%   if using scrpage2    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagestyle{scrheadings}
-\ohead{\headmark}
-\ihead{SCCC 05-11A1}%
-\chead{}
-\automark[subsection]{section}
-\setheadsepline{.1pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{singlespace}
+  \pagestyle{empty}
   \setcounter{tocdepth}{2}
-\tableofcontents
-  \newpage
-\listoffigures
-\listoftables
+  \tableofcontents
+  \clearpage
+  \pagestyle{empty}
+  \listoffigures
+  \listoftables
+  \clearpage
 \end{singlespace}
 
-\newpage
+\pagestyle{scrheadings}
 \pagenumbering{arabic}
 
-\newpage
 \input{10-subject}
 \newpage
 \input{20-strategic_setting}

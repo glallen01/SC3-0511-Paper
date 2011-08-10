@@ -10,6 +10,9 @@
 #
 #
 #
+# Remove p and . from \cite[p.111]{reference}
+# sed -e "/\[.*\([\,0-9-]*\)\]/s/p//" -e "/\[.*\([\,0-9-]*\)\]/s/\.//" -e  "/\[.*\([\,0-9-]*\)\]/s/ //" -i *.tex
+#
 #
 # \begin{figure}[h]
 #   \begin{center}

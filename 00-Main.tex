@@ -1,64 +1,82 @@
 
-\include{01-preamble}
+\input{01-preamble}
+\input{02-biboptions}
+
+
+%%   if using scrpage2    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{scrheadings}
+\automark{section}
+\ohead{\headmark}
+\ihead{SCCC 05-11A1}%
+\chead{}
+\ifoot{}\ofoot{}
+\cfoot{\pagemark}
+\setheadsepline{.1pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 \pagenumbering{roman}
 
-\singlespace
-
-\thispagestyle{empty}
 \begin{titlepage}
-	\begin{center}
-		BATTLE ANALYSIS\\
-		\vspace{3em}
-		THE BATTLE OF COWPENS\\
-		\vspace{3em}
-		SCCC CLASS \#05-11, GROUP \#1\\
-		\vspace{3em}
-		Ian Alvarado\\
-		\vspace{1em}
-		George Allen\\
-		Bieber\\
-		Cvetkovski\\
-		Flores\\
-		Futch\\
-		Hudak\\
-		Kalmus\\
-		Nagle\\
-		Nicholson\\
-	\end{center}
+  \thispagestyle{empty}
+  \begin{center}
+    \begin{singlespace}
+      BATTLE ANALYSIS\\
+      \vspace{3em}
+      THE BATTLE OF COWPENS\\
+      \vspace{3em}
+      SCCC CLASS \#05-11, GROUP \#A-1\\
+      \vspace{3em}
+      Group leader:\\
+      \vspace{1em}
+      CPT Ivan Alvarado\\
+      \vspace{2em}
+      Group members:\\
+      \vspace{1em}
+      CPT George Allen\\
+      CPT Christopher Bieber\\
+      CPT Ljupcho Cvetkovski\\
+      CPT Isreal Flores\\
+      CPT Sean Futch\\
+      CPT Thomas Hudak\\
+      1LT Alar Kalmus\\
+      CPT Luke Nagle\\
+      CPT Justin Nicholson\\
+    \end{singlespace}
+  \end{center}
 \end{titlepage}
 
-%%   if using scrpage2    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+  \pagestyle{empty}
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+  \clearpage
+  \pagestyle{empty}
+  \listoffigures
+  \listoftables
+  \clearpage
+\end{singlespace}
+
 \pagestyle{scrheadings}
-%\ohead{\pagemark}
-\ihead{SCCC 05-11A1}%
-\cfoot{}
-\automark[subsection]{section}
-\setheadsepline{.1pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\tableofcontents
-\listoffigures
-\listoftables
-
-\newpage
 \pagenumbering{arabic}
 
-\doublespace
-\include{10-subject}
-%\doublespace
-\include{20-strategic_setting}
-%\include{21-Comparison}
-%\include{30-operational_situation}
-%\include{40-tactical_situation}
-%\include{50-action}
-%\include{60-significance}
-%\include{90-notes}
-%\include{91-notes}
-
+\input{10-subject}
 \newpage
-\printindex
+\input{20-strategic_setting}
+\input{21-comparison}
+\newpage
+\input{30-operational_situation}
+\newpage
+\input{40-tactical_situation}
+\newpage
+\input{50-action}
+\newpage
+\input{60-significance}
+% \input{90-notes}
+% \input{91-notes}
+
+%\newpage
+%\printindex
 
 \end{document}
